@@ -1,6 +1,5 @@
 ---
 - hosts: ip
-  gather_facts: no
   tasks:
   - debug:
       msg: Starting Playbook 
