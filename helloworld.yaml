@@ -1,14 +1,5 @@
 ---
 - hosts: ip
   tasks:
-  - debug:
-      msg: Starting Playbook 
-  - name: ping machines
-    ping:
-  - name: execute linux command
-    command: ls
-    register: ls_result
-  - debug:
-      msg: "message is {{ ls_result }}"
-    when: my_var == "set"
-    
+  - name: ping all machines 
+    ping: 
